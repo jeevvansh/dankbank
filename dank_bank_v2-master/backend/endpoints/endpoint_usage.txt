@@ -1,0 +1,47 @@
+example url format
+http://example.com/api/{endpoint}?{param1}&{param2}
+
+ - endpoints -
+
+format:
+{endpoint}:
+    {GET,POST,PUT} - {expected return}
+        - {param1} : {content of param1}
+        - {param2} : {content of param2}
+
+g-oauth:
+    POST - Gets a session token for a user
+        - idtoken : the token received from a google oauth transaction
+
+users:
+    GET - returns info regarding the user
+        - session : the id from the current session
+
+groups:
+    POST - creates a group and returns http code 200
+        - session : the id from the current session
+        - group_name : the name for the new group
+
+    GET - gets the info for a group
+        - session : the id from the current session
+        - group_id : the id representing the group
+
+    PUT - adds a user to a group
+        - session : the id from the current session
+        - group_id : the id of the group one is adding themselves to
+
+    DELETE - deletes a group
+        - session : the id from the current session
+        - group_id : the id of the group to delete
+
+transactions:
+    POST - creates new transactions and returns http code 200
+        - session : the id from the current session
+        - group_id : the id representing the group
+        - amount : a decimal number representing the amount paid in USD
+        - paid : a comma separated list of the id's who were a part of the transaction (e.g. 87d8as75,986c8z7d,98v69z)
+        - description : description for transaction
+
+    GET - gets info for a transaction
+        - session : the id from the current session
+        - trans_id : id for the transaction
