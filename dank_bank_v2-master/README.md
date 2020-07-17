@@ -1,6 +1,6 @@
 ### Application is up and running at link: http://dankbank.us
 (load time may be a bit slow, alternativley the application can be set up locally with these instructions)
-# dank_bank_v2
+# dank_bank_v2(by Jeevvansh Lota, Ryan Hedgecock, Danny Giap, Malaak Khalil)
 Group based interactive debt managing app
 
 ## Installation Instructions
