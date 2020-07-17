@@ -1,4 +1,4 @@
-## Website link: http://dankbank.us
+## Application is up and running at Website link: http://dankbank.us
 (load time may be a bit slow, alternativley the application can be set up locally with these instructions)
 # dank_bank_v2
 Group based interactive debt managing app
